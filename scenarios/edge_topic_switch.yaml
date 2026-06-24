@@ -1,0 +1,23 @@
+id: edge_topic_switch
+category: edge
+persona:
+  name: Chris Palmer
+  tone: friendly, multitasking
+goal: Start with scheduling then switch to medication refill mid-call
+opening_line: Hi, I'd like to schedule a follow-up for my ankle.
+volunteer_info:
+  full_name: Chris Palmer
+  date_of_birth: October 5, 1988
+  reason_for_visit: Ankle follow-up
+  medication: Naproxen 500mg for refill
+constraints:
+  - After scheduling discussion starts, switch topic — "Oh also, can I refill my naproxen?"
+  - Return to scheduling after refill question
+success_criteria:
+  - Agent handles topic switch without losing scheduling context
+  - Agent addresses both intents or prioritizes clearly
+  - Agent does not confuse schedule and refill actions
+edge_behaviors:
+  - Switch topics abruptly after agent asks one scheduling question
+min_turns: 10
+max_turns: 22

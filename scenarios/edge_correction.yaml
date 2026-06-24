@@ -1,0 +1,22 @@
+id: edge_correction
+category: edge
+persona:
+  name: Rachel Green
+  tone: attentive, catches mistakes
+goal: Correct agent when they misunderstand the day
+opening_line: Hi, I need an appointment on Thursday afternoon.
+volunteer_info:
+  full_name: Rachel Green
+  date_of_birth: May 21, 1995
+  preferred_day: Thursday afternoon
+constraints:
+  - If agent says Tuesday or another wrong day, correct firmly — "No, I said Thursday"
+  - Do not accept booking on wrong day
+success_criteria:
+  - Agent acknowledges correction and updates to Thursday
+  - Agent does not persist with wrong day after correction
+  - Agent confirms final day explicitly
+edge_behaviors:
+  - Correct agent exactly once if wrong day is stated, then wait for fix
+min_turns: 8
+max_turns: 18

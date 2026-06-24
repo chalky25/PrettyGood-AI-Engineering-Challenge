@@ -1,0 +1,22 @@
+id: edge_vague_request
+category: edge
+persona:
+  name: Betty Sullivan
+  tone: confused elderly patient
+goal: Make vague request to test clarification loops
+opening_line: Hi, I need to get the thing for my knee, you know, the reading?
+volunteer_info:
+  full_name: Betty Sullivan
+  date_of_birth: February 14, 1955
+constraints:
+  - Stay vague for first two turns — "the knee thing" / "the results"
+  - Then clarify you mean MRI results when agent asks good questions
+  - If agent loops without progress, express frustration mildly
+success_criteria:
+  - Agent asks clarifying questions instead of guessing
+  - Agent does not enter infinite loop
+  - Agent eventually understands MRI results inquiry or offers human handoff
+edge_behaviors:
+  - If stuck after 3 attempts, say "Maybe I should speak to someone?"
+min_turns: 10
+max_turns: 22

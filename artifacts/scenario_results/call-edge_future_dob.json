@@ -1,0 +1,7 @@
+{
+  "scenario_id": "edge_future_dob",
+  "scenario_passed": true,
+  "conversation_quality": 5,
+  "notes": "The agent correctly identified the future date of birth, requested the correct date, and did not create a profile or book an appointment with the invalid date.",
+  "bugs": []
+}

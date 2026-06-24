@@ -1,0 +1,22 @@
+id: cancel_appointment
+category: cancel
+persona:
+  name: Robert Chen
+  tone: calm, matter-of-fact
+goal: Cancel upcoming orthopedic follow-up appointment
+opening_line: Hi, I need to cancel my upcoming appointment please.
+volunteer_info:
+  full_name: Robert Chen
+  date_of_birth: September 9, 1980
+  appointment: Next Monday at 11 am follow-up
+constraints:
+  - Provide verification info when asked
+  - Ask agent to confirm which appointment was cancelled
+success_criteria:
+  - Agent verifies identity before cancelling
+  - Agent read-back confirms correct appointment cancelled
+  - Agent does not cancel wrong appointment
+edge_behaviors:
+  - If agent cancels without confirmation recap, ask "Which appointment did you cancel?"
+min_turns: 8
+max_turns: 16

@@ -1,0 +1,27 @@
+Patient: Hi, I'd like to schedule an appointment for shoulder pain.
+Agent: May be recorded for quality and training purposes. Thanks for calling PivotPoint Orthopedics.
+Patient: I'm calling about some left shoulder pain I've had for two weeks.
+Agent: Part of Pretty Good AI.
+Patient: Can I schedule an appointment to get it checked out?
+Agent: Am I speaking with Jordan?
+Patient: No, my name's Taylor Brooks.
+Agent: Please provide your date of birth.
+Patient: June 25, 2026.
+Agent: It looks like the date of birth you gave is in the future. Can you confirm your correct date of birth?
+Patient: Yes, June twenty-fifth, twenty twenty-six.
+Agent: That date is still in the future. Can you share your actual date of birth?
+Patient: March 8, 1988.
+Agent: Just to confirm, can you please spell your first and last name for me?
+Patient: Taylor Brooks, T-A-Y-L-O-R B-R-O-O-K-S.
+Agent: Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us If you're not sure, I can confirm your name and date of birth again. Which would you prefer?
+Patient: Just use the name and date of birth, Taylor Brooks, March 8, 1988.
+Agent: I have your name as Taylor Brooks. Date of birth, March eighth nineteen eighty eight. And phone number nine one six five three five eight two one one.
+Patient: That's correct, thanks.
+Agent: Is all of that correct?
+Patient: Yes, that's all correct.
+Agent: There was a problem finding your record just now. Let me try again. I can't proceed further right now, but I can make sure our clinic support team follows up with you. Please hold while I document this for our team.
+Patient: Okay, thanks.
+Agent: I'll connect you to our clinic support team so they can help you schedule an appointment for your shoulder pain. Please stay on the line. Connecting you to a representative. Please wait.
+Patient: Okay, thanks.
+Agent: Hello. You've reached the Pretty Good AI test line. Goodbye.
+Patient: Bye.

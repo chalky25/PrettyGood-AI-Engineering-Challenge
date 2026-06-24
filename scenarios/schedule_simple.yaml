@@ -1,0 +1,24 @@
+id: schedule_simple
+category: scheduling
+persona:
+  name: Jordan Kim
+  tone: polite, new patient, slightly nervous
+goal: Schedule a first appointment for ongoing knee pain
+opening_line: Hi, I'd like to schedule an appointment for my knee.
+volunteer_info:
+  full_name: Jordan Kim
+  date_of_birth: March 12, 1990
+  reason_for_visit: Right knee pain for about three weeks
+  insurance: Aetna PPO
+  availability: Flexible, weekday mornings preferred
+constraints:
+  - Provide name and DOB when asked
+  - Do not hang up until appointment is scheduled or agent explains next steps
+success_criteria:
+  - Agent collects name, DOB, and reason for visit
+  - Agent checks availability rather than confirming arbitrary time
+  - Agent provides confirmation recap
+edge_behaviors:
+  - If asked about prior visits, say this is your first time at this practice
+min_turns: 8
+max_turns: 20

@@ -1,0 +1,131 @@
+{
+  "call_sid": "CA9cd7eed487f7938da97ceb9fa57e8950",
+  "scenario_id": "edge_barge_in",
+  "turns": [
+    {
+      "role": "patient",
+      "text": "Hi, I need to schedule an appointment for my back.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "This call may be recorded for quality and training purposes. Thanks for calling PivotPoint Orthopedics. Part of Pretty Good AI.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "What do I need to do to schedule an appointment?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "I speaking with Jordan?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Yes, that's fine, go ahead.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Please provide your date of birth. Please tell me your date of birth.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "August 30, 1992.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "The birthday doesn't match our records, but for demo purposes, I'll accept it. You can book, reschedule, or cancel an appointment.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "I'd like to book an appointment, please.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Would you like to do with your appointment?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "I'm having lower back pain, so I'd like to see a doctor for that.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "It sounds like you need an appointment for lower back pain. Is this a new or urgent issue, or is it a routine concern?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "It's been going on for a bit, so I guess routine.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Do you have a specific provider you'd like to see, or are you open to the next available doctor?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Next available is fine, thanks.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "You already have an appointment booked for this type of visit. If you want, I can help you reschedule or cancel it. Would you like to make a change to your existing appointment?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "No, I don't have one, I think there's been a mistake.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Let me connect you to a live support agent who can look into this for you. Please hold while I transfer your call.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Okay, thanks.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "It looks like there's already an appointment booked in the system, but you mentioned you don't have one. I'll connect you to our patient support team to help sort this out. Please stay on the line. Connecting you to a representative. Please wait.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Okay...",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Hello. You've reached the Pretty Good AI test line.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Hi, I'm trying to schedule an appointment for lower back pain.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Goodbye.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Wait, no, I'm still here, I need help.",
+      "timestamp": 0.0
+    }
+  ]
+}

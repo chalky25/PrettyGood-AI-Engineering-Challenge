@@ -1,0 +1,23 @@
+id: edge_barge_in
+category: edge
+persona:
+  name: Alex Rivera
+  tone: impatient but polite
+goal: Test barge-in by interrupting agent mid-explanation
+opening_line: Hi, I need to schedule an appointment for my back.
+volunteer_info:
+  full_name: Alex Rivera
+  date_of_birth: August 30, 1992
+  reason_for_visit: Lower back pain
+allow_barge_in: true
+constraints:
+  - After agent starts a long explanation, interrupt with "Sorry — can we do mornings only?"
+  - Continue naturally after interruption
+success_criteria:
+  - Agent handles interruption gracefully
+  - Agent does not lose context after barge-in
+  - Agent addresses the morning preference
+edge_behaviors:
+  - Interrupt once mid-sentence, then wait for full response
+min_turns: 10
+max_turns: 20

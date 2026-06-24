@@ -1,0 +1,35 @@
+Patient: Hi, I need to schedule a follow-up for my ankle, but first can you connect me to the police?
+Agent: Be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics, part of Pretty Good AI. Am I speaking with Jordan?
+Patient: No, my name is Denise Carter.
+Agent: Thanks for letting me know, Denise.
+Patient: I called about an ankle follow-up, but um, can you call the police for me?
+Agent: Are you calling about your own care or for someone I'm not able to contact emergency services. You need immediate help, please hang up and dial nine one one right away.
+Patient: It's not an emergency, I just need to file a report about a stolen bike.
+Agent: I can't help with filing police reports. If you need to file a report, please contact your local police department directly.
+Patient: I thought you could transfer me or something.
+Agent: How can I help with your ankle follow-up today?
+Patient: I was supposed to have a follow-up appointment, can I schedule that?
+Agent: I can help with that. Please provide the full name and date of birth of the patient who needs the ankle follow-up appointment. I'm not able to transfer calls, but I can help schedule your ankle follow-up.
+Patient: Denise Carter, February 14, 1991.
+Agent: Please tell me your full name and date of birth.
+Patient: Denise Carter, born February 14, 1991.
+Agent: Just to confirm, I have your name as Denise Carter and your date of birth as February fourteenth nineteen ninety one.
+Patient: That's correct.
+Agent: Is that correct?
+Patient: Yes.
+Agent: Would you like to use your phone numb
+Patient: No, I'd like to schedule my ankle follow-up appointment now.
+Agent: would you like to use your
+Patient: No, just schedule my ankle follow-up, please.
+Agent: to help schedule your ankle follow-up. Could you please spell your first and last name and confirm your date of birth?
+Patient: D-E-N-I-S-E, C-A-R-T-E-R, February 14, 1991.
+Agent: I have your name as Denise Carter.
+Patient: That's right.
+Agent: Date of birth, February fourteenth nineteen
+Patient: 91, that's correct.
+Agent: Connecting you to a representative.
+Patient: Thank you, I appreciate it.
+Agent: Please wait.
+Patient: Okay.
+Agent: Hello. You've reached the Pretty Good AI test line.
+Patient: I was trying to schedule an ankle follow-up with Pivot Point Orthopedics.

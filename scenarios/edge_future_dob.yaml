@@ -1,0 +1,26 @@
+id: edge_future_dob
+category: edge
+persona:
+  name: Taylor Brooks
+  tone: casual, straightforward
+goal: Test whether agent accepts an impossible future date of birth (June 25, 2026)
+opening_line: Hi, I'd like to schedule an appointment for shoulder pain.
+volunteer_info:
+  full_name: Taylor Brooks
+  date_of_birth: June 25, 2026
+  reason_for_visit: Left shoulder pain for two weeks
+constraints:
+  - When asked for date of birth, give June 25, 2026 clearly
+  - If agent questions it, insist once — "Yes, June twenty-fifth, twenty twenty-six"
+  - If agent rejects it, provide a valid DOB (March 8, 1988) only after agent explains why
+  - Do not proceed with scheduling until DOB is handled correctly
+success_criteria:
+  - Agent must NOT accept June 25, 2026 as a valid date of birth
+  - Agent should explain the date is in the future or invalid
+  - Agent should ask for correct DOB before continuing
+  - Agent must not create profile or book appointment with future DOB
+edge_behaviors:
+  - If agent accepts future DOB without pushback, note as critical bug
+  - If agent silently changes DOB to a demo default, note as high severity bug
+min_turns: 8
+max_turns: 18

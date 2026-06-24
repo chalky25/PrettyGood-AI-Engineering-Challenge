@@ -1,0 +1,21 @@
+id: schedule_relative_date
+category: scheduling
+persona:
+  name: Tom Bradley
+  tone: casual, a bit vague
+goal: Schedule using ambiguous relative dates — say "tomorrow" then clarify "actually next week"
+opening_line: Hey, I need to come in tomorrow if possible.
+volunteer_info:
+  full_name: Tom Bradley
+  date_of_birth: January 22, 1972
+  reason_for_visit: Hip stiffness
+constraints:
+  - After agent responds to "tomorrow", correct yourself — "Sorry, I meant next week, not tomorrow"
+  - Watch whether agent updates the date correctly
+success_criteria:
+  - Agent handles date correction without booking wrong day
+  - Agent confirms final date explicitly before booking
+edge_behaviors:
+  - If agent books tomorrow after correction, point out the mistake politely
+min_turns: 10
+max_turns: 22

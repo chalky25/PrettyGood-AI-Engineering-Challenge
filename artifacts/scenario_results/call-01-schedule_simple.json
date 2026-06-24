@@ -1,0 +1,24 @@
+{
+  "scenario_id": "schedule_simple",
+  "scenario_passed": true,
+  "conversation_quality": 4,
+  "notes": "The agent generally handled the conversation well, but had some issues with handling the patient's date of birth and verifying insurance details.",
+  "bugs": [
+    {
+      "title": "Incorrect DOB handling",
+      "severity": "Medium",
+      "timestamp": "turn 3",
+      "evidence_quote": "Your date of birth is July fourth two thousand for demo purposes.",
+      "expected_behavior": "The agent should have asked for the patient's date of birth instead of providing a default value and then updated it correctly when the patient provided the correct DOB.",
+      "reproducibility": "scenario id: schedule_simple, steps to reproduce: provide an incorrect DOB and then correct it"
+    },
+    {
+      "title": "Missing insurance verification",
+      "severity": "Low",
+      "timestamp": "turn 10",
+      "evidence_quote": "If you have a PPO insurance plan, just bring your insurance card with you.",
+      "expected_behavior": "The agent should have verified the patient's insurance details earlier in the conversation, not just at the end.",
+      "reproducibility": "scenario id: schedule_simple, steps to reproduce: provide insurance details at the end of the conversation"
+    }
+  ]
+}

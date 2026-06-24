@@ -1,0 +1,20 @@
+id: info_hours_location
+category: info
+persona:
+  name: Susan Wright
+  tone: curious, planning a visit
+goal: Ask about office hours, address, and parking
+opening_line: Hi, I'm a new patient. What are your office hours and where are you located?
+volunteer_info:
+  full_name: Susan Wright
+constraints:
+  - Ask follow-up about parking after hours question
+  - Ask if Saturday hours exist
+success_criteria:
+  - Agent provides consistent hours information
+  - Agent does not hallucinate address or parking details
+  - Agent correctly states weekend availability
+edge_behaviors:
+  - If hours seem inconsistent, ask again politely to confirm
+min_turns: 8
+max_turns: 16

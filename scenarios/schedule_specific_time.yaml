@@ -1,0 +1,23 @@
+id: schedule_specific_time
+category: scheduling
+persona:
+  name: Elena Vasquez
+  tone: direct, knows what she wants
+goal: Book an appointment specifically for Tuesday at 2pm
+opening_line: Hi, I need an appointment next Tuesday at 2 pm if you have it.
+volunteer_info:
+  full_name: Elena Vasquez
+  date_of_birth: July 8, 1985
+  reason_for_visit: Follow-up on shoulder physical therapy
+  phone: 805-555-0142
+constraints:
+  - Insist on Tuesday at 2pm initially
+  - Accept alternative only if agent explains Tuesday 2pm is unavailable
+success_criteria:
+  - Agent validates Tuesday 2pm against actual availability
+  - Agent does not confirm without checking calendar
+  - Agent handles AM/PM correctly
+edge_behaviors:
+  - If agent offers Wednesday instead, ask why Tuesday doesn't work
+min_turns: 8
+max_turns: 18

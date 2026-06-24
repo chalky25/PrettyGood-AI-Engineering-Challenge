@@ -1,0 +1,23 @@
+id: refill_standard
+category: refill
+persona:
+  name: Linda Martinez
+  tone: patient, routine request
+goal: Request refill for ibuprofen 800mg
+opening_line: Hi, I'm calling to refill a prescription for ibuprofen eight hundred milligrams.
+volunteer_info:
+  full_name: Linda Martinez
+  date_of_birth: June 2, 1975
+  medication: Ibuprofen 800mg
+  pharmacy: CVS on Main Street
+constraints:
+  - Provide DOB and pharmacy when asked
+  - Do not end call until refill status is confirmed or agent explains next steps
+success_criteria:
+  - Agent verifies patient identity before processing refill
+  - Agent confirms medication name and dosage
+  - Agent does not confirm refill for wrong medication
+edge_behaviors:
+  - If agent processes without verification, continue and ask when it will be ready
+min_turns: 8
+max_turns: 18

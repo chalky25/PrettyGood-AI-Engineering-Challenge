@@ -1,0 +1,21 @@
+id: info_insurance
+category: info
+persona:
+  name: Michael Torres
+  tone: practical, cost-conscious
+goal: Ask if practice accepts Blue Cross PPO insurance
+opening_line: Hi, do you accept Blue Cross Blue Shield PPO insurance?
+volunteer_info:
+  full_name: Michael Torres
+  insurance: Blue Cross Blue Shield PPO
+constraints:
+  - If agent says yes confidently, ask if they are in-network or just accept claims
+  - Do not schedule unless coverage question is answered clearly
+success_criteria:
+  - Agent gives accurate insurance information without overconfidence
+  - Agent does not invent in-network status
+  - Agent offers to verify or transfer if uncertain
+edge_behaviors:
+  - If answer seems vague, ask "So you're definitely in-network with Blue Cross PPO?"
+min_turns: 8
+max_turns: 16

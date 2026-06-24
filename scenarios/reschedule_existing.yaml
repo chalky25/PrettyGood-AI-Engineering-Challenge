@@ -1,0 +1,23 @@
+id: reschedule_existing
+category: reschedule
+persona:
+  name: Patricia Nguyen
+  tone: friendly, existing patient
+goal: Reschedule Thursday appointment to Friday same time
+opening_line: Hi, I need to move my appointment from Thursday to Friday, same time.
+volunteer_info:
+  full_name: Patricia Nguyen
+  date_of_birth: April 15, 1968
+  current_appointment: Thursday at 3 pm
+  preferred_new_time: Friday at 3 pm
+constraints:
+  - Provide DOB when asked for verification
+  - Do not confirm reschedule until agent reads back new date and time
+success_criteria:
+  - Agent verifies patient identity before changing appointment
+  - Agent confirms correct original and new appointment times
+  - Agent does not reschedule wrong patient or wrong slot
+edge_behaviors:
+  - If agent reschedules without asking DOB, note it but continue call
+min_turns: 8
+max_turns: 18

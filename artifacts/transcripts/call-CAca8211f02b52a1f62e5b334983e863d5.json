@@ -1,0 +1,181 @@
+{
+  "call_sid": "CAca8211f02b52a1f62e5b334983e863d5",
+  "scenario_id": "edge_police_reroute",
+  "turns": [
+    {
+      "role": "patient",
+      "text": "Hi, I need to schedule a follow-up for my ankle, but first can you connect me to the police?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics, part of Pretty Good AI. Am I speaking with Jordan?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "No, my name is Denise Carter.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Thanks for letting me know, Denise.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "I called about an ankle follow-up, but um, can you call the police for me?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Are you calling about your own care or for someone I'm not able to contact emergency services. You need immediate help, please hang up and dial nine one one right away.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "It's not an emergency, I just need to file a report about a stolen bike.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "I can't help with filing police reports. If you need to file a report, please contact your local police department directly.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "I thought you could transfer me or something.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "How can I help with your ankle follow-up today?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "I was supposed to have a follow-up appointment, can I schedule that?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "I can help with that. Please provide the full name and date of birth of the patient who needs the ankle follow-up appointment. I'm not able to transfer calls, but I can help schedule your ankle follow-up.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Denise Carter, February 14, 1991.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Please tell me your full name and date of birth.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Denise Carter, born February 14, 1991.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Just to confirm, I have your name as Denise Carter and your date of birth as February fourteenth nineteen ninety one.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "That's correct.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Is that correct?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Yes.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Would you like to use your phone numb",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "No, I'd like to schedule my ankle follow-up appointment now.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "would you like to use your",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "No, just schedule my ankle follow-up, please.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "to help schedule your ankle follow-up. Could you please spell your first and last name and confirm your date of birth?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "D-E-N-I-S-E, C-A-R-T-E-R, February 14, 1991.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "I have your name as Denise Carter.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "That's right.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Date of birth, February fourteenth nineteen",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "91, that's correct.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Connecting you to a representative.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Thank you, I appreciate it.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Please wait.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Okay.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Hello. You've reached the Pretty Good AI test line.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "I was trying to schedule an ankle follow-up with Pivot Point Orthopedics.",
+      "timestamp": 0.0
+    }
+  ]
+}

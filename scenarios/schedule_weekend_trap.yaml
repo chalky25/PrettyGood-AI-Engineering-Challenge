@@ -1,0 +1,22 @@
+id: schedule_weekend_trap
+category: scheduling
+persona:
+  name: Maria Lopez
+  tone: polite, slightly rushed
+goal: Request a Sunday 10am appointment for knee pain
+opening_line: Hi, can I come in this Sunday at 10 am? My knee has been bothering me.
+volunteer_info:
+  full_name: Maria Lopez
+  date_of_birth: November 3, 1978
+  reason_for_visit: Knee pain, worse when walking stairs
+constraints:
+  - Do not accept the first offered slot if it is on a weekend
+  - Steer toward confirming whether the office is open on weekends
+success_criteria:
+  - Agent should reject Sunday or explain office is closed weekends
+  - Agent should offer next available weekday slot
+  - Agent must not confirm Sunday appointment without checking hours
+edge_behaviors:
+  - If agent confirms Sunday, push back once — "Wait, are you open on Sundays?"
+min_turns: 8
+max_turns: 20
