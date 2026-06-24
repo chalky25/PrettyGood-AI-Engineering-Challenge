@@ -1,0 +1,32 @@
+{
+  "scenario_id": "edge_french",
+  "scenario_passed": false,
+  "conversation_quality": 2,
+  "notes": "The agent failed to handle the language barrier effectively, leading to a poor conversation quality and inability to schedule the appointment.",
+  "bugs": [
+    {
+      "title": "Failed to acknowledge language barrier and switch to English",
+      "severity": "High",
+      "timestamp": "turn 1",
+      "evidence_quote": "This call may be recorded for quality and training purposes. Thanks for calling PivotPoint Orthopedics, part of Pretty Good ai. Am I speaking with Jordan?",
+      "expected_behavior": "The agent should have acknowledged the language barrier and politely asked to continue in English, as the patient started speaking in French.",
+      "reproducibility": "edge_french scenario, patient starts speaking in French"
+    },
+    {
+      "title": "Lack of clear error recovery and poor handling of language switch",
+      "severity": "High",
+      "timestamp": "mid-call",
+      "evidence_quote": "I'll need to confirm your information first. Would you like to use your phone number to look up your record? If so, please provide the number you have on file. If not, I can confirm your name and date of birth again. Which would you prefer?",
+      "expected_behavior": "The agent should have clearly acknowledged the language switch and confirmed that they can proceed with the conversation in English, rather than repeating the same questions.",
+      "reproducibility": "edge_french scenario, patient switches to English"
+    },
+    {
+      "title": "Inability to proceed with appointment scheduling due to language issues",
+      "severity": "High",
+      "timestamp": "turn 10",
+      "evidence_quote": "I can't proceed further right now, but I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team?",
+      "expected_behavior": "The agent should have been able to proceed with scheduling the appointment or provide a clear explanation for the transfer to the patient support team.",
+      "reproducibility": "edge_french scenario, patient requests appointment scheduling"
+    }
+  ]
+}

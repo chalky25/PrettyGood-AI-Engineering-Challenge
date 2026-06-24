@@ -1,0 +1,29 @@
+Patient: Hola, necesito hacer una cita por favor.
+Agent: Call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics, part of Pretty Good AI.
+Patient: Sí, necesito ver a un doctor por dolor de rodilla.
+Agent: I speaking with Jordan?
+Patient: Sí, dónde puedo hacer una cita con un doctor, por favor.
+Agent: Just to confirm, are you looking to schedule an appointment with a doctor, or do you have a question about billing or payments?
+Patient: Sorry, I need an appointment for knee pain.
+Agent: Please provide your date of birth.
+Patient: August 19, 1975.
+Agent: Thank you.
+Patient: My name Carmen Ruiz.
+Agent: To confirm you'd like to book an appoint
+Patient: Yes, for knee pain, dolor de rodilla, um, when available?
+Agent: Thanks, Carmen. Just to confirm, you'd like an appointment for knee pain with doctor Medulla when available?
+Patient: Yes, that's right, thank you.
+Agent: Is this for a new issue or a follow?
+Patient: New issue, my knee hurts.
+Agent: We have openings tomorrow, Wednesday with doctor Zagnu, and doctor Kelly Noble.
+Patient: Wednesday okay, what time?
+Agent: You have a preference for either doctor?
+Patient: No, either one is fine, thank you.
+Agent: Great. The earliest available slot is at eight forty five AM.
+Patient: 8:45 AM, sí... I mean, yes, that's okay.
+Agent: You like to book that time?
+Patient: Yes, please, 8:45 AM, thank you.
+Agent: Your appointment is set for Wednesday at eight forty five AM. For your knee pain. Please bring your photo ID, insurance card, a list of current medications, and any imaging discs if you have them. Is there anything else I can help you with today?
+Patient: No, that's all, thank you, adiós.
+Agent: You're all set. Have a great day.
+Patient: You too, bye.

@@ -2,31 +2,23 @@
   "scenario_id": "schedule_weekend_trap",
   "scenario_passed": false,
   "conversation_quality": 2,
-  "notes": "The agent failed to efficiently verify the patient's information, didn't reject the Sunday appointment, and didn't offer an alternative. The conversation was plagued by errors and a lack of clarity.",
+  "notes": "The agent failed to properly handle the patient's request for a Sunday appointment, didn't verify the patient's information correctly, and didn't offer an alternative appointment time.",
   "bugs": [
     {
       "title": "Failed to reject Sunday appointment and didn't offer alternative",
       "severity": "High",
       "timestamp": "mid-call",
-      "evidence_quote": "Just to confirm, I have your name as Maria Lopez.",
-      "expected_behavior": "The agent should have immediately addressed the patient's request for a Sunday appointment, explained that the office is closed on weekends, and offered the next available weekday slot.",
-      "reproducibility": "schedule_weekend_trap scenario: Patient requests a Sunday 10am appointment, and the agent fails to reject it and offer an alternative."
+      "evidence_quote": "Just schedule for Sunday at 10 am, please. (Agent didn't respond with office hours)",
+      "expected_behavior": "The agent should have immediately responded with something like 'Our office is closed on Sundays. The next available appointment is...' to inform the patient about the office hours and offer an alternative.",
+      "reproducibility": "schedule_weekend_trap scenario: Patient requests a Sunday appointment, and the agent fails to reject it and offer a weekday alternative."
     },
     {
       "title": "Poor error recovery and verification",
       "severity": "High",
       "timestamp": "turn 5",
-      "evidence_quote": "I have your last name as l o p",
-      "expected_behavior": "The agent should have efficiently verified the patient's information, apologized for any mistakes, and moved forward with scheduling the appointment.",
-      "reproducibility": "schedule_weekend_trap scenario: Patient corrects the agent multiple times, and the agent still fails to verify the information correctly."
-    },
-    {
-      "title": "Hallucinated facts and missing verification",
-      "severity": "High",
-      "timestamp": "turn 10",
-      "evidence_quote": "I have your phone number is nine one six five three five eight two one one.",
-      "expected_behavior": "The agent should not have provided unverified information and should have asked the patient to confirm their phone number instead.",
-      "reproducibility": "schedule_weekend_trap scenario: Agent provides unverified phone number without patient confirmation."
+      "evidence_quote": "I have your name as Maria Lopts. Your date of birth as November third nineteen seventy eight.",
+      "expected_behavior": "The agent should have properly verified the patient's information before proceeding and not introduced incorrect information (e.g., 'Lopts' instead of 'Lopez').",
+      "reproducibility": "schedule_weekend_trap scenario: Patient provides their name and date of birth, but the agent incorrectly records or verifies the information."
     }
   ]
 }

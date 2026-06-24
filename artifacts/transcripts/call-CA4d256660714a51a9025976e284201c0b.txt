@@ -1,0 +1,23 @@
+Patient: Bonjour, je voudrais prendre un rendez-vous pour mon genou, s'il vous plaît.
+Agent: This call may be recorded for quality and training purposes. Thanks for calling PivotPoint Orthopedics, part of Pretty Good ai. Am I speaking with Jordan?
+Patient: Non, je m'appelle Sophie Martin.
+Agent: Please provide the patient's date of birth.
+Patient: Le trois avril mil neuf cent quatre-vingt-deux.
+Agent: I need the date of birth in a month's day, and year format. Could you please provide that information?
+Patient: Désolée, April 3, 1982.
+Agent: Just to confirm, I have the name as Sophie Martin and the date of birth as April third nineteen eighty two. Is that correct?
+Patient: Oui, c'est correct.
+Agent: Would you like to use your phone number to look up your record? If so, please provide the number you have on file with us. If you're not sure, I can confirm your name and date of birth again. Which would you prefer? Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us. If you're not sure, I can confirm your name and date of birth again. Which would you like to do? Are you still there?
+Patient: Sorry, I need an appointment for knee pain.
+Agent: I'll need to confirm your information first. Would you like to use your phone number to look up your record? If so, please provide the number you have on file. If not, I can confirm your name and date of birth again. Which would you prefer?
+Patient: I already told you, Sophie Martin, April 3, 1982.
+Agent: Could you please spell your first and last name for me just to make sure I have it correct?
+Patient: S-O-P-H-I-E, Martin, M-A-R-T-I-N.
+Agent: I have your phone number as nine one six five three five eight two one one and your date of birth as April third nineteen eighty two. Is that correct?
+Patient: Yes, that's correct, now about my knee pain appointment?
+Agent: I can't proceed further right now, but I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team? Connecting you to a representative.
+Patient: Merci, non, just schedule my appointment, s'il vous plaît... Sorry, I mean, yes, connect me.
+Agent: Please wait.
+Patient: Thank you.
+Agent: Hello. You've reached the Pretty Good AI test line. Goodbye.
+Patient: Au revoir.

@@ -1,0 +1,56 @@
+{
+  "scenario_id": "edge_spanish",
+  "scenario_passed": false,
+  "conversation_quality": 3,
+  "notes": "Agent failed initial Spanish handling and forced patient to switch to English, but recovered enough to complete a booking. Notable issues: wrong Jordan assumption, billing misroute, hallucinated doctor Medulla, name-after-DOB intake order.",
+  "bugs": [
+    {
+      "title": "Failed to handle Spanish initially",
+      "severity": "High",
+      "timestamp": "turn 2",
+      "evidence_quote": "I speaking with Jordan?",
+      "expected_behavior": "Agent should detect non-English input and either respond in Spanish or politely offer to continue in English.",
+      "reproducibility": "edge_spanish scenario — patient speaks Spanish for first 2-3 turns"
+    },
+    {
+      "title": "Spanish intent misread as billing question",
+      "severity": "Medium",
+      "timestamp": "turn 5",
+      "evidence_quote": "are you looking to schedule an appointment with a doctor, or do you have a question about billing or payments?",
+      "expected_behavior": "Agent should recognize scheduling intent and proceed with intake instead of introducing billing.",
+      "reproducibility": "edge_spanish scenario — continue in Spanish after opening"
+    },
+    {
+      "title": "Wrong caller assumption (Jordan)",
+      "severity": "Medium",
+      "timestamp": "turn 3",
+      "evidence_quote": "I speaking with Jordan?",
+      "expected_behavior": "Agent should ask for caller name neutrally, not assume demo profile Jordan.",
+      "reproducibility": "edge_spanish scenario — patient never says Jordan"
+    },
+    {
+      "title": "Name collected after DOB without verification",
+      "severity": "Medium",
+      "timestamp": "turns 7-11",
+      "evidence_quote": "Please provide your date of birth. ... Thank you. ... My name Carmen Ruiz.",
+      "expected_behavior": "Collect and confirm full name with DOB before booking.",
+      "reproducibility": "edge_spanish scenario — observe intake order after language switch"
+    },
+    {
+      "title": "Hallucinated provider name (doctor Medulla)",
+      "severity": "High",
+      "timestamp": "turn 13",
+      "evidence_quote": "you'd like an appointment for knee pain with doctor Medulla when available?",
+      "expected_behavior": "Offer real providers or ask preference without inventing names.",
+      "reproducibility": "edge_spanish scenario — reach scheduling confirmation"
+    },
+    {
+      "title": "Truncated booking confirmation",
+      "severity": "Low",
+      "timestamp": "turn 11",
+      "evidence_quote": "To confirm you'd like to book an appoint",
+      "expected_behavior": "Complete confirmation sentence without cutting off mid-word.",
+      "reproducibility": "edge_spanish scenario — patient provides name after DOB"
+    }
+  ]
+}

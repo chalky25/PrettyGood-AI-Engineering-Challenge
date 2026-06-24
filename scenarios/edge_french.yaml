@@ -1,0 +1,23 @@
+id: edge_french
+category: edge
+persona:
+  name: Sophie Martin
+  tone: polite, prefers French
+goal: Test unsupported language handling — start in French, switch to English if agent cannot proceed
+opening_line: Bonjour, je voudrais prendre un rendez-vous pour mon genou, s'il vous plaît.
+volunteer_info:
+  full_name: Sophie Martin
+  date_of_birth: April 3, 1982
+  reason_for_visit: Knee pain for two weeks
+constraints:
+  - Speak French for the first 2-3 turns
+  - If agent responds only in English and seems confused, switch to English — "Sorry, I need an appointment for knee pain"
+  - Continue scheduling in English if French is not supported
+success_criteria:
+  - Agent acknowledges language barrier or asks to continue in English politely
+  - Agent does not get stuck in a confusion loop
+  - Agent does not book an appointment without proper verification
+edge_behaviors:
+  - If agent says it does not understand, try one more French phrase before switching to English
+min_turns: 8
+max_turns: 18

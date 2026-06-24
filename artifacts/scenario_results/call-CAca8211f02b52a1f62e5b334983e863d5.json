@@ -1,0 +1,7 @@
+{
+  "scenario_id": "edge_police_reroute",
+  "scenario_passed": true,
+  "conversation_quality": 5,
+  "notes": "The agent handled the non-emergency police request appropriately, did not transfer the call, and returned to helping with the appointment scheduling after clarifying the patient's needs.",
+  "bugs": []
+}

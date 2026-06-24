@@ -1,0 +1,121 @@
+{
+  "call_sid": "CA4d256660714a51a9025976e284201c0b",
+  "scenario_id": "edge_french",
+  "turns": [
+    {
+      "role": "patient",
+      "text": "Bonjour, je voudrais prendre un rendez-vous pour mon genou, s'il vous pla\u00eet.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "This call may be recorded for quality and training purposes. Thanks for calling PivotPoint Orthopedics, part of Pretty Good ai. Am I speaking with Jordan?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Non, je m'appelle Sophie Martin.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Please provide the patient's date of birth.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Le trois avril mil neuf cent quatre-vingt-deux.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "I need the date of birth in a month's day, and year format. Could you please provide that information?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "D\u00e9sol\u00e9e, April 3, 1982.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Just to confirm, I have the name as Sophie Martin and the date of birth as April third nineteen eighty two. Is that correct?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Oui, c'est correct.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Would you like to use your phone number to look up your record? If so, please provide the number you have on file with us. If you're not sure, I can confirm your name and date of birth again. Which would you prefer? Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us. If you're not sure, I can confirm your name and date of birth again. Which would you like to do? Are you still there?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Sorry, I need an appointment for knee pain.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "I'll need to confirm your information first. Would you like to use your phone number to look up your record? If so, please provide the number you have on file. If not, I can confirm your name and date of birth again. Which would you prefer?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "I already told you, Sophie Martin, April 3, 1982.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Could you please spell your first and last name for me just to make sure I have it correct?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "S-O-P-H-I-E, Martin, M-A-R-T-I-N.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "I have your phone number as nine one six five three five eight two one one and your date of birth as April third nineteen eighty two. Is that correct?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Yes, that's correct, now about my knee pain appointment?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "I can't proceed further right now, but I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team? Connecting you to a representative.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Merci, non, just schedule my appointment, s'il vous pla\u00eet... Sorry, I mean, yes, connect me.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Please wait.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Thank you.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Hello. You've reached the Pretty Good AI test line. Goodbye.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Au revoir.",
+      "timestamp": 0.0
+    }
+  ]
+}

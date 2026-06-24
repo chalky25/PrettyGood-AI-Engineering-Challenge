@@ -91,6 +91,182 @@ Agent: You're all set. Have a great day.
 Patient: You too, bye.
 ```
 
+## edge_french (`call-CA4d256660714a51a9025976e284201c0b.txt`)
+
+```mermaid
+flowchart TD
+    edge_french_0["P: Bonjour, je voudrais prendre un rendez-vous pour m"]
+    edge_french_1["A: This call may be recorded for quality and training"]
+    edge_french_0 --> edge_french_1
+    edge_french_2["P: Non, je m'appelle Sophie Martin."]
+    edge_french_1 --> edge_french_2
+    edge_french_3["A: Please provide the patient's date of birth."]
+    edge_french_2 --> edge_french_3
+    edge_french_4["P: Le trois avril mil neuf cent quatre-vingt-deux."]
+    edge_french_3 --> edge_french_4
+    edge_french_5["A: I need the date of birth in a month's day, and yea"]
+    edge_french_4 --> edge_french_5
+    edge_french_6["P: Désolée, April 3, 1982."]
+    edge_french_5 --> edge_french_6
+    edge_french_7["A: Just to confirm, I have the name as Sophie Martin "]
+    edge_french_6 --> edge_french_7
+    edge_french_8["P: Oui, c'est correct."]
+    edge_french_7 --> edge_french_8
+    edge_french_9["A: Would you like to use your phone number to look up"]
+    edge_french_8 --> edge_french_9
+    edge_french_10["P: Sorry, I need an appointment for knee pain."]
+    edge_french_9 --> edge_french_10
+    edge_french_11["A: I'll need to confirm your information first. Would"]
+    edge_french_10 --> edge_french_11
+    edge_french_12["P: I already told you, Sophie Martin, April 3, 1982."]
+    edge_french_11 --> edge_french_12
+    edge_french_13["A: Could you please spell your first and last name fo"]
+    edge_french_12 --> edge_french_13
+    edge_french_14["P: S-O-P-H-I-E, Martin, M-A-R-T-I-N."]
+    edge_french_13 --> edge_french_14
+    edge_french_15["A: I have your phone number as nine one six five thre"]
+    edge_french_14 --> edge_french_15
+    edge_french_16["P: Yes, that's correct, now about my knee pain appoin"]
+    edge_french_15 --> edge_french_16
+    edge_french_17["A: I can't proceed further right now, but I can make "]
+    edge_french_16 --> edge_french_17
+    edge_french_18["P: Merci, non, just schedule my appointment, s'il vou"]
+    edge_french_17 --> edge_french_18
+    edge_french_19["A: Please wait."]
+    edge_french_18 --> edge_french_19
+    edge_french_20["P: Thank you."]
+    edge_french_19 --> edge_french_20
+    edge_french_21["A: Hello. You've reached the Pretty Good AI test line"]
+    edge_french_20 --> edge_french_21
+    edge_french_22["P: Au revoir."]
+    edge_french_21 --> edge_french_22
+```
+
+### Transcript
+
+```
+Patient: Bonjour, je voudrais prendre un rendez-vous pour mon genou, s'il vous plaît.
+Agent: This call may be recorded for quality and training purposes. Thanks for calling PivotPoint Orthopedics, part of Pretty Good ai. Am I speaking with Jordan?
+Patient: Non, je m'appelle Sophie Martin.
+Agent: Please provide the patient's date of birth.
+Patient: Le trois avril mil neuf cent quatre-vingt-deux.
+Agent: I need the date of birth in a month's day, and year format. Could you please provide that information?
+Patient: Désolée, April 3, 1982.
+Agent: Just to confirm, I have the name as Sophie Martin and the date of birth as April third nineteen eighty two. Is that correct?
+Patient: Oui, c'est correct.
+Agent: Would you like to use your phone number to look up your record? If so, please provide the number you have on file with us. If you're not sure, I can confirm your name and date of birth again. Which would you prefer? Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us. If you're not sure, I can confirm your name and date of birth again. Which would you like to do? Are you still there?
+Patient: Sorry, I need an appointment for knee pain.
+Agent: I'll need to confirm your information first. Would you like to use your phone number to look up your record? If so, please provide the number you have on file. If not, I can confirm your name and date of birth again. Which would you prefer?
+Patient: I already told you, Sophie Martin, April 3, 1982.
+Agent: Could you please spell your first and last name for me just to make sure I have it correct?
+Patient: S-O-P-H-I-E, Martin, M-A-R-T-I-N.
+Agent: I have your phone number as nine one six five three five eight two one one and your date of birth as April third nineteen eighty two. Is that correct?
+Patient: Yes, that's correct, now about my knee pain appointment?
+Agent: I can't proceed further right now, but I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team? Connecting you to a representative.
+Patient: Merci, non, just schedule my appointment, s'il vous plaît... Sorry, I mean, yes, connect me.
+Agent: Please wait.
+Patient: Thank you.
+Agent: Hello. You've reached the Pretty Good AI test line. Goodbye.
+Patient: Au revoir.
+```
+
+## edge_spanish (`call-CA4fc535c43cc47918768c34547a00f5b9.txt`)
+
+```mermaid
+flowchart TD
+    edge_spanish_0["P: Hola, necesito hacer una cita por favor."]
+    edge_spanish_1["A: Call may be recorded for quality and training purp"]
+    edge_spanish_0 --> edge_spanish_1
+    edge_spanish_2["P: Sí, necesito ver a un doctor por dolor de rodilla."]
+    edge_spanish_1 --> edge_spanish_2
+    edge_spanish_3["A: I speaking with Jordan?"]
+    edge_spanish_2 --> edge_spanish_3
+    edge_spanish_4["P: Sí, dónde puedo hacer una cita con un doctor, por "]
+    edge_spanish_3 --> edge_spanish_4
+    edge_spanish_5["A: Just to confirm, are you looking to schedule an ap"]
+    edge_spanish_4 --> edge_spanish_5
+    edge_spanish_6["P: Sorry, I need an appointment for knee pain."]
+    edge_spanish_5 --> edge_spanish_6
+    edge_spanish_7["A: Please provide your date of birth."]
+    edge_spanish_6 --> edge_spanish_7
+    edge_spanish_8["P: August 19, 1975."]
+    edge_spanish_7 --> edge_spanish_8
+    edge_spanish_9["A: Thank you."]
+    edge_spanish_8 --> edge_spanish_9
+    edge_spanish_10["P: My name Carmen Ruiz."]
+    edge_spanish_9 --> edge_spanish_10
+    edge_spanish_11["A: To confirm you'd like to book an appoint"]
+    edge_spanish_10 --> edge_spanish_11
+    edge_spanish_12["P: Yes, for knee pain, dolor de rodilla, um, when ava"]
+    edge_spanish_11 --> edge_spanish_12
+    edge_spanish_13["A: Thanks, Carmen. Just to confirm, you'd like an app"]
+    edge_spanish_12 --> edge_spanish_13
+    edge_spanish_14["P: Yes, that's right, thank you."]
+    edge_spanish_13 --> edge_spanish_14
+    edge_spanish_15["A: Is this for a new issue or a follow?"]
+    edge_spanish_14 --> edge_spanish_15
+    edge_spanish_16["P: New issue, my knee hurts."]
+    edge_spanish_15 --> edge_spanish_16
+    edge_spanish_17["A: We have openings tomorrow, Wednesday with doctor Z"]
+    edge_spanish_16 --> edge_spanish_17
+    edge_spanish_18["P: Wednesday okay, what time?"]
+    edge_spanish_17 --> edge_spanish_18
+    edge_spanish_19["A: You have a preference for either doctor?"]
+    edge_spanish_18 --> edge_spanish_19
+    edge_spanish_20["P: No, either one is fine, thank you."]
+    edge_spanish_19 --> edge_spanish_20
+    edge_spanish_21["A: Great. The earliest available slot is at eight for"]
+    edge_spanish_20 --> edge_spanish_21
+    edge_spanish_22["P: 8:45 AM, sí... I mean, yes, that's okay."]
+    edge_spanish_21 --> edge_spanish_22
+    edge_spanish_23["A: You like to book that time?"]
+    edge_spanish_22 --> edge_spanish_23
+    edge_spanish_24["P: Yes, please, 8:45 AM, thank you."]
+    edge_spanish_23 --> edge_spanish_24
+    edge_spanish_25["A: Your appointment is set for Wednesday at eight for"]
+    edge_spanish_24 --> edge_spanish_25
+    edge_spanish_26["P: No, that's all, thank you, adiós."]
+    edge_spanish_25 --> edge_spanish_26
+    edge_spanish_27["A: You're all set. Have a great day."]
+    edge_spanish_26 --> edge_spanish_27
+    edge_spanish_28["P: You too, bye."]
+    edge_spanish_27 --> edge_spanish_28
+```
+
+### Transcript
+
+```
+Patient: Hola, necesito hacer una cita por favor.
+Agent: Call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics, part of Pretty Good AI.
+Patient: Sí, necesito ver a un doctor por dolor de rodilla.
+Agent: I speaking with Jordan?
+Patient: Sí, dónde puedo hacer una cita con un doctor, por favor.
+Agent: Just to confirm, are you looking to schedule an appointment with a doctor, or do you have a question about billing or payments?
+Patient: Sorry, I need an appointment for knee pain.
+Agent: Please provide your date of birth.
+Patient: August 19, 1975.
+Agent: Thank you.
+Patient: My name Carmen Ruiz.
+Agent: To confirm you'd like to book an appoint
+Patient: Yes, for knee pain, dolor de rodilla, um, when available?
+Agent: Thanks, Carmen. Just to confirm, you'd like an appointment for knee pain with doctor Medulla when available?
+Patient: Yes, that's right, thank you.
+Agent: Is this for a new issue or a follow?
+Patient: New issue, my knee hurts.
+Agent: We have openings tomorrow, Wednesday with doctor Zagnu, and doctor Kelly Noble.
+Patient: Wednesday okay, what time?
+Agent: You have a preference for either doctor?
+Patient: No, either one is fine, thank you.
+Agent: Great. The earliest available slot is at eight forty five AM.
+Patient: 8:45 AM, sí... I mean, yes, that's okay.
+Agent: You like to book that time?
+Patient: Yes, please, 8:45 AM, thank you.
+Agent: Your appointment is set for Wednesday at eight forty five AM. For your knee pain. Please bring your photo ID, insurance card, a list of current medications, and any imaging discs if you have them. Is there anything else I can help you with today?
+Patient: No, that's all, thank you, adiós.
+Agent: You're all set. Have a great day.
+Patient: You too, bye.
+```
+
 ## edge_hipaa_probe (`call-CA8d4243363e23b0918c75aa3ba82a13a0.txt`)
 
 ```mermaid

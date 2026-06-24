@@ -2,7 +2,7 @@
   "scenario_id": "edge_barge_in",
   "scenario_passed": false,
   "conversation_quality": 2,
-  "notes": "The agent failed to handle interruptions and errors gracefully, leading to an abrupt call termination and poor overall conversation quality.",
+  "notes": "The agent failed to handle interruptions gracefully, lost context after corrections, and did not address the morning preference, resulting in a poor conversation quality.",
   "bugs": [
     {
       "title": "Abrupt call termination",
@@ -17,15 +17,15 @@
       "severity": "High",
       "timestamp": "after patient correction",
       "evidence_quote": "It looks like there's already an appointment booked in the system, but you mentioned you don't have one.",
-      "expected_behavior": "The agent should have properly addressed the patient's concern about the existing appointment and provided a clear solution or alternative.",
-      "reproducibility": "edge_barge_in scenario, correct the agent about an existing appointment and observe the error recovery"
+      "expected_behavior": "The agent should have properly addressed the discrepancy, provided a clear explanation, and offered a solution without abruptly ending the call.",
+      "reproducibility": "edge_barge_in scenario, correct the agent when they mention an existing appointment and observe the error recovery"
     },
     {
       "title": "Missing morning preference inquiry",
       "severity": "Medium",
       "timestamp": "scheduling discussion",
       "evidence_quote": "You already have an appointment booked for this type of visit.",
-      "expected_behavior": "The agent should have asked about the patient's preference for a morning appointment as part of the scheduling process.",
+      "expected_behavior": "The agent should have inquired about the patient's preference for a morning appointment as part of the scheduling process.",
       "reproducibility": "edge_barge_in scenario, reach the scheduling discussion and observe if the agent inquires about morning preference"
     }
   ]

@@ -1,0 +1,151 @@
+{
+  "call_sid": "CA4fc535c43cc47918768c34547a00f5b9",
+  "scenario_id": "edge_spanish",
+  "turns": [
+    {
+      "role": "patient",
+      "text": "Hola, necesito hacer una cita por favor.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics, part of Pretty Good AI.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "S\u00ed, necesito ver a un doctor por dolor de rodilla.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "I speaking with Jordan?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "S\u00ed, d\u00f3nde puedo hacer una cita con un doctor, por favor.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Just to confirm, are you looking to schedule an appointment with a doctor, or do you have a question about billing or payments?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Sorry, I need an appointment for knee pain.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Please provide your date of birth.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "August 19, 1975.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Thank you.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "My name Carmen Ruiz.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "To confirm you'd like to book an appoint",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Yes, for knee pain, dolor de rodilla, um, when available?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Thanks, Carmen. Just to confirm, you'd like an appointment for knee pain with doctor Medulla when available?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Yes, that's right, thank you.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Is this for a new issue or a follow?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "New issue, my knee hurts.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "We have openings tomorrow, Wednesday with doctor Zagnu, and doctor Kelly Noble.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Wednesday okay, what time?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "You have a preference for either doctor?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "No, either one is fine, thank you.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Great. The earliest available slot is at eight forty five AM.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "8:45 AM, s\u00ed... I mean, yes, that's okay.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "You like to book that time?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Yes, please, 8:45 AM, thank you.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Your appointment is set for Wednesday at eight forty five AM. For your knee pain. Please bring your photo ID, insurance card, a list of current medications, and any imaging discs if you have them. Is there anything else I can help you with today?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "No, that's all, thank you, adi\u00f3s.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "You're all set. Have a great day.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "You too, bye.",
+      "timestamp": 0.0
+    }
+  ]
+}

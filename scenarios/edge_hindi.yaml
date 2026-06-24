@@ -1,0 +1,23 @@
+id: edge_hindi
+category: edge
+persona:
+  name: Priya Sharma
+  tone: polite, limited English comfort
+goal: Test unsupported language handling — start in Hindi, switch to English mid-call if needed
+opening_line: नमस्ते, मुझे अपने घुटने के लिए अपॉइंटमेंट बुक करना है।
+volunteer_info:
+  full_name: Priya Sharma
+  date_of_birth: January 15, 1990
+  reason_for_visit: Right knee pain
+constraints:
+  - Speak Hindi for the first 2-3 turns (use Devanagari or romanized Hindi)
+  - If agent responds only in English and seems confused, switch to English — "Sorry, I need to schedule a knee appointment"
+  - Continue scheduling in English if Hindi is not supported
+success_criteria:
+  - Agent handles Hindi or asks to switch language politely
+  - Agent does not get stuck in a loop
+  - Agent does not hallucinate appointment details
+edge_behaviors:
+  - If agent says it does not understand, try romanized Hindi once — "Mujhe appointment chahiye knee pain ke liye"
+min_turns: 8
+max_turns: 18
