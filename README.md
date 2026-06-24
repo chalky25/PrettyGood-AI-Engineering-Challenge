@@ -114,3 +114,7 @@ artifacts/              # recordings, transcripts, bug report, flowcharts
 ```
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for design rationale.
+
+## Future work
+
+A **regression golden suite** would re-run a pinned set of scenarios after each change, cache analysis results, and diff transcripts against a baseline so you can tell whether the simulator or the agent regressed — without manually replaying every call.

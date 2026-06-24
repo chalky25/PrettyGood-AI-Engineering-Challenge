@@ -1,0 +1,9 @@
+PrettyGood AI: Engineering Challenge: +1 8054398008
+
+Github: https://github.com/chalky25/PrettyGood-AI-Engineering-Challenge
+Twilio #: +19165358211
+Scenarios: .yaml files (persona, goal, constraint, success criteria) 
+
+Twilio --> Deepgram (STTS): Call ends (Grok analysis --> Bug report)
+
+Future: re-run pinned scenarios, diff transcripts/bugs vs baseline after each change
