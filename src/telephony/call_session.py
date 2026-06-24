@@ -33,10 +33,21 @@ class CallSession:
         self._response_lock = asyncio.Lock()
         self._opened_sent = False
         self._greet_timeout_task: Optional[asyncio.Task] = None
+        self._stt_language = "en"
+        self._dtmf_sent = False
+
+    def _stt_language_for_scenario(self) -> str:
+        if self.simulator.scenario.primary_language == "es":
+            return "multi"
+        return "en"
 
     async def attach_websocket(self, ws: WebSocket) -> None:
         self.ws = ws
-        self.stt = DeepgramSTTStream(on_transcript=self._schedule_transcript)
+        self._stt_language = self._stt_language_for_scenario()
+        self.stt = DeepgramSTTStream(
+            on_transcript=self._schedule_transcript,
+            language=self._stt_language,
+        )
         await self.stt.connect()
 
     def _schedule_transcript(self, text: str, is_final: bool) -> None:
@@ -74,10 +85,31 @@ class CallSession:
             finally:
                 self._responding = False
 
-    async def _speak(self, text: str) -> None:
+    async def _send_dtmf(self, digit: str) -> None:
+        """Send keypad tone so the agent IVR can detect language selection."""
         if not self.ws or not self.stream_sid:
             return
-        mulaw = await synthesize_speech(text)
+        await self.ws.send_json(
+            {
+                "event": "dtmf",
+                "streamSid": self.stream_sid,
+                "dtmf": {"digit": digit},
+            }
+        )
+        logger.info("Sent DTMF digit: %s", digit)
+        await asyncio.sleep(0.8)
+
+    async def _speak(self, text: str, skip_dtmf: bool = False) -> None:
+        if not self.ws or not self.stream_sid:
+            return
+
+        language = self.simulator.speech_language(text)
+
+        if not skip_dtmf and self.simulator.needs_dtmf(text) and not self._dtmf_sent:
+            await self._send_dtmf(self.simulator.scenario.dtmf_digit)
+            self._dtmf_sent = True
+
+        mulaw = await synthesize_speech(text, language=language)
         for frame in chunk_audio(mulaw):
             payload = encode_twilio_payload(frame)
             await self.ws.send_json(
@@ -103,10 +135,27 @@ class CallSession:
         if self._opened_sent:
             return
         self._opened_sent = True
+        if self.simulator.scenario.primary_language == "es":
+            self._greet_timeout_task = asyncio.create_task(self._spanish_opening_sequence())
+            return
         self._greet_timeout_task = asyncio.create_task(self._greet_timeout())
 
+    async def _spanish_opening_sequence(self) -> None:
+        """Wait for IVR, press Spanish keypad option, then speak opening in Spanish."""
+        await asyncio.sleep(5.0)
+        async with self._response_lock:
+            if self.simulator.state.patient_turn_count > 0:
+                return
+            digit = self.simulator.scenario.dtmf_digit
+            await self._send_dtmf(digit)
+            self._dtmf_sent = True
+            await asyncio.sleep(1.2)
+            opening = self.simulator.opening_line()
+            logger.info("Patient says (Spanish opening): %s", opening)
+            await self._speak(opening, skip_dtmf=True)
+
     async def handle_media(self, payload: str) -> None:
-        if self.stt:
+        if self.stt and self.stt._ws:
             audio = decode_twilio_payload(payload)
             await self.stt.send_audio(audio)
 

@@ -15,7 +15,9 @@ class Settings(BaseSettings):
 
     groq_model: str = "llama-3.3-70b-versatile"
     deepgram_stt_model: str = "nova-2"
+    deepgram_stt_model_es: str = "nova-2"
     deepgram_tts_voice: str = "aura-asteria-en"
+    deepgram_tts_voice_es: str = "aura-2-celeste-es"
     endpointing_ms: int = 900
     max_reply_words: int = 25
 

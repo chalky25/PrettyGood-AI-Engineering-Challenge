@@ -21,6 +21,7 @@ class ConversationState:
     turns: list[Turn] = field(default_factory=list)
     patient_turn_count: int = 0
     complete: bool = False
+    switched_to_english: bool = False
 
     def add_agent(self, text: str) -> None:
         if text.strip():
@@ -89,6 +90,37 @@ class PatientSimulator:
 
         self.state.add_patient(reply)
         return reply
+
+    def _looks_english(self, text: str) -> bool:
+        lower = text.lower()
+        english_markers = (
+            "sorry",
+            "i need",
+            "appointment",
+            "my name",
+            "yes,",
+            "august",
+            "thank you",
+        )
+        spanish_markers = ("hola", "sí", "necesito", "dolor", "gracias", "adiós", "por favor")
+        if any(marker in lower for marker in spanish_markers):
+            return False
+        return any(marker in lower for marker in english_markers)
+
+    def speech_language(self, text: str) -> str:
+        """Return 'es' or 'en' for TTS/STT based on scenario and current turn."""
+        if self.scenario.primary_language != "es":
+            return "en"
+        if self.state.switched_to_english or self._looks_english(text):
+            self.state.switched_to_english = True
+            return "en"
+        if self.state.patient_turn_count > self.scenario.spanish_turns_max:
+            self.state.switched_to_english = True
+            return "en"
+        return "es"
+
+    def needs_dtmf(self, text: str) -> bool:
+        return self.scenario.dtmf_before_spanish and self.speech_language(text) == "es"
 
     def mark_complete(self) -> None:
         self.state.complete = True

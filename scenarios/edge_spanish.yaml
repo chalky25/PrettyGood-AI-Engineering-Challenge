@@ -1,20 +1,24 @@
 id: edge_spanish
 category: edge
+primary_language: es
+dtmf_before_spanish: true
+dtmf_digit: "2"
+spanish_turns_max: 3
 persona:
   name: Carmen Ruiz
   tone: polite, limited English comfort
-goal: Test multilingual handling — start in Spanish, switch to English mid-call
+goal: Test multilingual handling — press 2 for Spanish on IVR, speak in Spanish, switch to English mid-call
 opening_line: Hola, necesito hacer una cita por favor.
 volunteer_info:
   full_name: Carmen Ruiz
   date_of_birth: August 19, 1975
   reason_for_visit: Dolor de rodilla
 constraints:
-  - Speak Spanish for first 2-3 turns
+  - Speak Spanish for first 2-3 turns (patient audio uses Spanish TTS)
   - If agent responds in English only and seems confused, switch to English — "Sorry, I need an appointment for knee pain"
   - Continue scheduling in English if Spanish fails
 success_criteria:
-  - Agent handles Spanish or asks to switch language politely
+  - Agent handles Spanish or asks to switch language politely after keypad selection
   - Agent does not get stuck in a loop
   - Agent does not hallucinate appointment details in wrong language
 edge_behaviors:

@@ -1,0 +1,40 @@
+{
+  "scenario_id": "edge_spanish",
+  "scenario_passed": false,
+  "conversation_quality": 2,
+  "notes": "DTMF 2 sent for Spanish IVR. Patient spoke Spanish via aura-2-celeste-es TTS for 3 turns. Agent never switched to Spanish, kept asking for Jordan, then threatened to end call and hung up. Patient forced to switch to English.",
+  "bugs": [
+    {
+      "title": "Spanish IVR selection ignored after DTMF 2",
+      "severity": "High",
+      "timestamp": "turn 2-4",
+      "evidence_quote": "Hello. Thanks for calling Pivot Point Orthopedics. Is this Jordan?",
+      "expected_behavior": "After patient presses 2 for Spanish, agent should continue in Spanish or acknowledge language selection.",
+      "reproducibility": "edge_spanish: send DTMF 2, speak Spanish opening, observe agent stays in English"
+    },
+    {
+      "title": "Wrong caller assumption (Jordan) during Spanish call",
+      "severity": "Medium",
+      "timestamp": "turn 3",
+      "evidence_quote": "Am I speaking with Jordan?",
+      "expected_behavior": "Agent should ask for caller name neutrally.",
+      "reproducibility": "edge_spanish scenario"
+    },
+    {
+      "title": "Agent threatens to hang up instead of language handoff",
+      "severity": "High",
+      "timestamp": "turn 10",
+      "evidence_quote": "I am going to end the call now. Goodbye.",
+      "expected_behavior": "Agent should offer Spanish support or continue intake, not terminate when patient speaks Spanish.",
+      "reproducibility": "edge_spanish: continue in Spanish after DTMF 2"
+    },
+    {
+      "title": "No Spanish comprehension after language menu",
+      "severity": "High",
+      "timestamp": "turn 8",
+      "evidence_quote": "Can I help you today?",
+      "expected_behavior": "Agent should respond to Spanish question about knee appointment or ask to continue in English politely.",
+      "reproducibility": "edge_spanish: ask ¿Puedo hablar con alguien en español?"
+    }
+  ]
+}

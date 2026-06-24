@@ -27,6 +27,10 @@ class Scenario:
     min_turns: int = 8
     max_turns: int = 20
     allow_barge_in: bool = False
+    primary_language: str = "en"
+    dtmf_before_spanish: bool = False
+    dtmf_digit: str = "1"
+    spanish_turns_max: int = 3
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> Scenario:
@@ -49,6 +53,10 @@ class Scenario:
             min_turns=data.get("min_turns", 8),
             max_turns=data.get("max_turns", 20),
             allow_barge_in=data.get("allow_barge_in", False),
+            primary_language=data.get("primary_language", "en"),
+            dtmf_before_spanish=data.get("dtmf_before_spanish", False),
+            dtmf_digit=str(data.get("dtmf_digit", "1")),
+            spanish_turns_max=data.get("spanish_turns_max", 3),
         )
 
 

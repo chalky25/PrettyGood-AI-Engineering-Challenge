@@ -1,0 +1,61 @@
+{
+  "call_sid": "CA841b668fe17711db1ce7dd1e0ac70742",
+  "scenario_id": "edge_spanish",
+  "turns": [
+    {
+      "role": "patient",
+      "text": "Hola, necesito hacer una cita por favor.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Recorded for quality and training purposes. For calling Pivot Point Orthopedics.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "\u00bfHabla espa\u00f1ol? Quiero hablar con alguien sobre un problema de salud.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Hard is Pretty Good AI. Am I speaking with Jordan?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "No, no s\u00e9 qui\u00e9n es Jordan. Quiero hacer una cita para dolor de rodilla.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Hello. Thanks for calling Pivot Point Orthopedics. Is this Jordan?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "No, soy Carmen Ruiz. Necesito una cita para el dolor de rodilla. \u00bfPuedo hablar con alguien en espa\u00f1ol?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Can I help you today?",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Lo siento, no entiendo bien. \u00bfHabla espa\u00f1ol? Sorry, I need an appointment for knee pain.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "Please provide your full date of birth Can you please provide your date of birth? I am going to end the call now. Goodbye.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "August 19, 1975. Wait, no, por favor, no cuelgue.",
+      "timestamp": 0.0
+    }
+  ]
+}

@@ -2,15 +2,15 @@
   "scenario_id": "schedule_simple",
   "scenario_passed": true,
   "conversation_quality": 4,
-  "notes": "The agent mostly handled the scheduling process correctly, but had an issue with handling the patient's date of birth. The agent provided a default date of birth and then didn't properly update it when the patient corrected them.",
+  "notes": "The agent generally handled the scheduling process well, but had an issue with handling the patient's date of birth. The agent provided a default date of birth and did not immediately update the patient's profile when the patient corrected them.",
   "bugs": [
     {
       "title": "Incorrect Date of Birth Handling",
       "severity": "Medium",
       "timestamp": "turn 3",
-      "evidence_quote": "Your date of birth is July fourth two thousand for demo purposes.",
-      "expected_behavior": "The agent should have asked for the patient's date of birth instead of providing a default value, and then updated the patient's profile with the correct date of birth provided by the patient.",
-      "reproducibility": "scenario id: schedule_simple, steps to reproduce: patient corrects the agent's incorrect date of birth assumption"
+      "evidence_quote": "Your patient profile is set up and your date of birth is July fourth two thousand for demo purposes.",
+      "expected_behavior": "The agent should have asked for the patient's date of birth instead of providing a default value, and then updated the patient's profile with the correct date of birth when provided.",
+      "reproducibility": "scenario id: schedule_simple, steps to reproduce: patient corrects the agent's assumption about their date of birth"
     }
   ]
 }

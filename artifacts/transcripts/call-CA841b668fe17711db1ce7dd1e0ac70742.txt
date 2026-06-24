@@ -1,0 +1,11 @@
+Patient: Hola, necesito hacer una cita por favor.
+Agent: Recorded for quality and training purposes. For calling Pivot Point Orthopedics.
+Patient: ¿Habla español? Quiero hablar con alguien sobre un problema de salud.
+Agent: Hard is Pretty Good AI. Am I speaking with Jordan?
+Patient: No, no sé quién es Jordan. Quiero hacer una cita para dolor de rodilla.
+Agent: Hello. Thanks for calling Pivot Point Orthopedics. Is this Jordan?
+Patient: No, soy Carmen Ruiz. Necesito una cita para el dolor de rodilla. ¿Puedo hablar con alguien en español?
+Agent: Can I help you today?
+Patient: Lo siento, no entiendo bien. ¿Habla español? Sorry, I need an appointment for knee pain.
+Agent: Please provide your full date of birth Can you please provide your date of birth? I am going to end the call now. Goodbye.
+Patient: August 19, 1975. Wait, no, por favor, no cuelgue.

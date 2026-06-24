@@ -1,0 +1,21 @@
+{
+  "call_sid": "CA88464058cf714bf75f764d548aa08267",
+  "scenario_id": "edge_spanish",
+  "turns": [
+    {
+      "role": "patient",
+      "text": "Hola, necesito hacer una cita por favor.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "agent",
+      "text": "All maybe recorded for quality and training purpices para espa\u00f1ol, oprima el dos. Thanks for calling pivot point or the pedx. Hello, thanks for calling pivot point. Worth apitics.",
+      "timestamp": 0.0
+    },
+    {
+      "role": "patient",
+      "text": "Oprimo el dos. \u00bfHola? Necesito una cita con un doctor para dolor de rodilla.",
+      "timestamp": 0.0
+    }
+  ]
+}

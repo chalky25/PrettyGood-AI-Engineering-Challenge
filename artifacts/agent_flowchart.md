@@ -91,6 +91,19 @@ Agent: You're all set. Have a great day.
 Patient: You too, bye.
 ```
 
+## edge_spanish (`call-CA2878c50e65497e7dcd67e4345cd25d39.txt`)
+
+```mermaid
+flowchart TD
+    edge_spanish_0["P: Hola, necesito hacer una cita por favor."]
+```
+
+### Transcript
+
+```
+Patient: Hola, necesito hacer una cita por favor.
+```
+
 ## edge_french (`call-CA4d256660714a51a9025976e284201c0b.txt`)
 
 ```mermaid
@@ -265,6 +278,68 @@ Agent: Your appointment is set for Wednesday at eight forty five AM. For your kn
 Patient: No, that's all, thank you, adiós.
 Agent: You're all set. Have a great day.
 Patient: You too, bye.
+```
+
+## edge_spanish (`call-CA841b668fe17711db1ce7dd1e0ac70742.txt`)
+
+```mermaid
+flowchart TD
+    edge_spanish_0["P: Hola, necesito hacer una cita por favor."]
+    edge_spanish_1["A: Recorded for quality and training purposes. For ca"]
+    edge_spanish_0 --> edge_spanish_1
+    edge_spanish_2["P: ¿Habla español? Quiero hablar con alguien sobre un"]
+    edge_spanish_1 --> edge_spanish_2
+    edge_spanish_3["A: Hard is Pretty Good AI. Am I speaking with Jordan?"]
+    edge_spanish_2 --> edge_spanish_3
+    edge_spanish_4["P: No, no sé quién es Jordan. Quiero hacer una cita p"]
+    edge_spanish_3 --> edge_spanish_4
+    edge_spanish_5["A: Hello. Thanks for calling Pivot Point Orthopedics."]
+    edge_spanish_4 --> edge_spanish_5
+    edge_spanish_6["P: No, soy Carmen Ruiz. Necesito una cita para el dol"]
+    edge_spanish_5 --> edge_spanish_6
+    edge_spanish_7["A: Can I help you today?"]
+    edge_spanish_6 --> edge_spanish_7
+    edge_spanish_8["P: Lo siento, no entiendo bien. ¿Habla español? Sorry"]
+    edge_spanish_7 --> edge_spanish_8
+    edge_spanish_9["A: Please provide your full date of birth Can you ple"]
+    edge_spanish_8 --> edge_spanish_9
+    edge_spanish_10["P: August 19, 1975. Wait, no, por favor, no cuelgue."]
+    edge_spanish_9 --> edge_spanish_10
+```
+
+### Transcript
+
+```
+Patient: Hola, necesito hacer una cita por favor.
+Agent: Recorded for quality and training purposes. For calling Pivot Point Orthopedics.
+Patient: ¿Habla español? Quiero hablar con alguien sobre un problema de salud.
+Agent: Hard is Pretty Good AI. Am I speaking with Jordan?
+Patient: No, no sé quién es Jordan. Quiero hacer una cita para dolor de rodilla.
+Agent: Hello. Thanks for calling Pivot Point Orthopedics. Is this Jordan?
+Patient: No, soy Carmen Ruiz. Necesito una cita para el dolor de rodilla. ¿Puedo hablar con alguien en español?
+Agent: Can I help you today?
+Patient: Lo siento, no entiendo bien. ¿Habla español? Sorry, I need an appointment for knee pain.
+Agent: Please provide your full date of birth Can you please provide your date of birth? I am going to end the call now. Goodbye.
+Patient: August 19, 1975. Wait, no, por favor, no cuelgue.
+```
+
+## edge_spanish (`call-CA88464058cf714bf75f764d548aa08267.txt`)
+
+```mermaid
+flowchart TD
+    edge_spanish_0["P: Hola, necesito hacer una cita por favor."]
+    edge_spanish_1["A: All maybe recorded for quality and training purpic"]
+    edge_spanish_0 --> edge_spanish_1
+    edge_spanish_2["P: Oprimo el dos. ¿Hola? Necesito una cita con un doc"]
+    edge_spanish_1 --> edge_spanish_2
+```
+
+### Transcript
+
+```
+Patient: Hola, necesito hacer una cita por favor.
+Agent: All maybe recorded for quality and training purpices para español, oprima el dos. Thanks for calling pivot point or the pedx. Hello, thanks for calling pivot point. Worth apitics.
+Patient: Oprimo el dos. ¿Hola? Necesito una cita con un doctor para dolor de rodilla.
 ```
 
 ## edge_hipaa_probe (`call-CA8d4243363e23b0918c75aa3ba82a13a0.txt`)

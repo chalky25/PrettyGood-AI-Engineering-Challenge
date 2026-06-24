@@ -1,0 +1,11 @@
+{
+  "call_sid": "CA2878c50e65497e7dcd67e4345cd25d39",
+  "scenario_id": "edge_spanish",
+  "turns": [
+    {
+      "role": "patient",
+      "text": "Hola, necesito hacer una cita por favor.",
+      "timestamp": 0.0
+    }
+  ]
+}
